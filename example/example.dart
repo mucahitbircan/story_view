@@ -56,8 +56,7 @@ class Home extends StatelessWidget {
                   //   ),
                   // ),
                   StoryItem.inlineImage(
-                    url:
-                        "https://image.ibb.co/cU4WGx/Omotuo-Groundnut-Soup-braperucci-com-1.jpg",
+                    url: "https://image.ibb.co/cU4WGx/Omotuo-Groundnut-Soup-braperucci-com-1.jpg",
                     controller: controller,
                     caption: Text(
                       "Omotuo & Nkatekwan; You will love this meal if taken as supper.",
@@ -69,8 +68,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   StoryItem.inlineImage(
-                    url:
-                        "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif",
+                    url: "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif",
                     controller: controller,
                     caption: Text(
                       "Hektas, sektas and skatad",
@@ -96,14 +94,11 @@ class Home extends StatelessWidget {
             Material(
               child: InkWell(
                 onTap: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => MoreStories()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => MoreStories()));
                 },
                 child: Container(
                   decoration: BoxDecoration(
-                      color: Colors.black54,
-                      borderRadius:
-                          BorderRadius.vertical(bottom: Radius.circular(8))),
+                      color: Colors.black54, borderRadius: BorderRadius.vertical(bottom: Radius.circular(8))),
                   padding: EdgeInsets.symmetric(vertical: 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -166,8 +161,7 @@ class _MoreStoriesState extends State<MoreStories> {
             ),
           ),
           StoryItem.pageImage(
-            url:
-                "https://image.ibb.co/cU4WGx/Omotuo-Groundnut-Soup-braperucci-com-1.jpg",
+            url: "https://image.ibb.co/cU4WGx/Omotuo-Groundnut-Soup-braperucci-com-1.jpg",
             caption: "Still sampling",
             controller: storyController,
           ),

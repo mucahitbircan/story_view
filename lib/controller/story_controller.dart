@@ -13,20 +13,20 @@ class StoryController {
 
   /// Notify listeners with a [PlaybackState.pause] state
   void pause() {
-    playbackNotifier.add(PlaybackState.pause);
+    playbackNotifier.sink.add(PlaybackState.pause);
   }
 
   /// Notify listeners with a [PlaybackState.play] state
   void play() {
-    playbackNotifier.add(PlaybackState.play);
+    playbackNotifier.sink.add(PlaybackState.play);
   }
 
   void next() {
-    playbackNotifier.add(PlaybackState.next);
+    playbackNotifier.sink.add(PlaybackState.next);
   }
 
   void previous() {
-    playbackNotifier.add(PlaybackState.previous);
+    playbackNotifier.sink.add(PlaybackState.previous);
   }
 
   /// Remember to call dispose when the story screen is disposed to close
